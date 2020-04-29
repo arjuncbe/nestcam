@@ -1,0 +1,88 @@
+body {
+  padding-top: 4rem !important;
+}
+
+#header > .logo {
+  margin: 0 0 2rem 0 !important;
+}
+
+.spotlight.alt {
+  text-align: left !important;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white !important;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: black;
+  font-size: 18px;
+}
+
+.alignitemscenter {
+  text-align: center;
+}
+
+.alignitemscenter > div {
+  display: inline-block;
+}
+
+#header > .logo a:hover {
+  cursor: default;
+}
+.spotlight .inner {
+  padding: 4rem !important;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.baseimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.altimage {
+  -moz-order: 2;
+  -webkit-order: 2;
+  -ms-order: 2;
+  order: 2;
+}

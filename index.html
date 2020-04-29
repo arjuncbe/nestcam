@@ -1,6 +1,132 @@
+<!DOCTYPE html>
 <html>
-<header><title>Nestcam</title></header>
-<body>
-Nest Cam. Hello World!
-</body>
+  <head>
+    <title>Nest Cam</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom.css" />
+	<link rel="icon" type="image/png"href="images/favicon.ico">
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="logo">
+        <a href="#">NestCam<span>A DIY live streaming camera using RPi</span></a>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <section id="main">
+      <div class="inner">
+        <!-- Three -->
+        <section id="three" class="wrapper">
+          <div class="spotlight alt">
+            <div class="image flush">
+			  <img id="streamthumbnail" src="images/nest.jpg" alt="" onclick="startStream()" />
+            </div>
+            <div class="inner">
+              <h3>Hello !</h3>
+              <p>
+
+                A young blue tit family moved in with us recently and brought the
+				much needed happiness in these difficult times. 
+      </p>
+      <p>
+				So, we built a live streaming camera using Raspberry Pi and a weekend to share it with you.		  
+				Hope you enjoy watching them as much as we did. 
+			  </p>
+        <p>Stay Home! Stay Safe! <br/>Sindhu & Arjun</p>
+            </div>
+          </div>
+          <div class="spotlight">
+            <!-- <div class="image flush"><img src="images/bluetit.jpg" alt=""/></div> -->
+
+            <div class="container">
+              <div class="image baseimage  flush"><img src="images/bluetit.jpg" alt=""/></div>
+              <div class="overlay">
+                <div class="image flush"><img src="images/bluetithanging.jpg" alt=""/></div>
+              </div>
+            </div>
+            <div class="inner">
+              <h3>Blue Tit</h3>
+              <p>
+                The Blue tit (Cyanistes caeruleus) is a small passerine bird in
+                the tit family, Paridae. They are easily recognisable by thier blue
+        and yellow plumage and small size. 
+        Blue tits are non-migratory birds found commonly in European woodslands and prefer insects, spiders and seeds for their diet.
+        </p>
+        <p>       
+				 The birds are famed for
+                their skill, as they can cling to the outermost branches and
+                hang upside down when looking for food.</p>
+              </p>
+            </div>
+          </div>
+          <div class="spotlight alt">
+            <!-- <div class="image flush"><img src="images/fly.jpg" alt="" /></div> -->
+
+            
+            <div class="container altimage">
+              <div class="image baseimage  flush"><img src="images/fly2.jpg" alt=""/></div>
+              <div class="overlay">
+                <div class="image flush"><img src="images/fly.jpg" alt=""/></div>
+              </div>
+            </div>
+            <div class="inner alignitemscenter">          
+			  <div>
+                <audio controls>
+					<source src="images/song.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio>
+				</div>
+            </div>
+		  </div>
+		  <div class="spotlight">
+            <div class="image flush"><img src="images/mask.jpg" alt="" /></div>
+            <div class="inner alignitemscenter">
+              <div>
+				<a href="https://www.rspb.org.uk/globalassets/downloads/kids--schools/make-a-blue-tit-mask.pdf" target="_blank" class="button">Make your own Blue Tit Mask <span class="icon fa-download"></span></a>
+			  </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- <div class="container">
+        <ul class="icons">
+          <li>
+            <a href="#" class="icon fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-facebook"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="icon fa-envelope-o"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+	  </div> -->
+	  <div class="copyright">
+      In the midst of chaos, there is also opportunity!
+	</div>
+    </footer>
+	<video id="video" style="display: none;"></video>
+    <!-- Scripts -->
+	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/hls.min.js"></script>
+  </body>
 </html>
