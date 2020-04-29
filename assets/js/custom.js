@@ -11,7 +11,7 @@ function startStream() {
     return;
   }
   document.getElementById("streamthumbnail").src =
-    "http://18.132.31.69/?action=stream";
+    "https://email.en.ascema.com:444/?action=stream";
   if (Hls.isSupported()) {
     var hls = new Hls();
     hls.loadSource(videoSrc);
