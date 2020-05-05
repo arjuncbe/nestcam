@@ -122,3 +122,7 @@ body {
 .spotlight.alt {
   color: rgba(255, 255, 255, 0.55) !important;
 }
+
+.embed-container {
+  height: 389px !important;
+}
