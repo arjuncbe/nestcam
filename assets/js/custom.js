@@ -1,5 +1,5 @@
 var video = document.getElementById("video");
-var videoSrc = "https://email.en.ascema.com/audio/stream.m3u8";
+var videoSrc = "";
 
 var streaming = false;
 
@@ -10,8 +10,7 @@ function startStream() {
     streaming = false;
     return;
   }
-  document.getElementById("streamthumbnail").src =
-    "https://email.en.ascema.com:444/?action=stream";
+  document.getElementById("streamthumbnail").src = "";
   if (Hls.isSupported()) {
     var hls = new Hls();
     hls.loadSource(videoSrc);
